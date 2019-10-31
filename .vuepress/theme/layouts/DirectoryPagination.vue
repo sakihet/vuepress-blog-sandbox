@@ -45,7 +45,7 @@
       />
     </Page>
 
-    <div>
+    <div class="theme-default-content">
       <ul>
         <li v-for="page in $pagination.pages">
           <router-link :to="page.path">{{ page.title }}</router-link>
