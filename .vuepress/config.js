@@ -1,4 +1,6 @@
 module.exports = {
+  title: 'blog',
+  description: 'description',
   plugins: [
     [
       '@vuepress/blog',
