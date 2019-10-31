@@ -13,6 +13,9 @@ module.exports = {
             dirname: '_posts',
             // Path of the `entry page` (or `list page`)
             path: '/',
+            pagination: {
+              lengthPerPage: 2,
+            },
           },
         ],
       },
