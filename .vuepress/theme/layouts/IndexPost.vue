@@ -51,10 +51,7 @@
           <router-link :to="page.path">{{ page.title }}</router-link>
         </li>
       </ul>
-      <div>
-        <router-link v-if="$pagination.hasPrev" :to="$pagination.prevLink">Prev</router-link>
-        <router-link v-if="$pagination.hasNext" :to="$pagination.nextLink">Next</router-link>
-      </div>
+      <Pagination />
     </div>
   </div>
 </template>
@@ -65,9 +62,10 @@ import Navbar from '@parent-theme/components/Navbar.vue'
 import Page from '@parent-theme/components/Page.vue'
 import Sidebar from '@parent-theme/components/Sidebar.vue'
 import { resolveSidebarItems } from '@parent-theme/components/../util'
+import { Pagination } from '@vuepress/plugin-blog/lib/client/components'
 
 export default {
-  components: { Home, Page, Sidebar, Navbar },
+  components: { Home, Page, Sidebar, Navbar, Pagination },
 
   data () {
     return {
